@@ -19,12 +19,12 @@ const App = () => {
     <Suspense fallback={<LoadingSpinner />}>
     <Routes>
     <Route element={<Layout />}>
-      <Route path="/" element={<Dashboard />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/create-card" element={<CreateCard />} />
       <Route path="/manage-cards" element={<ManageCards />} />
       <Route path="/spend" element={<Spend />} />
       <Route path="/history" element={<History />} />
-      <Route path="/home" element={<Home />} />
     </Route>
     </Routes>
     </Suspense>
